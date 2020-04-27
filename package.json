@@ -1,0 +1,27 @@
+{
+  "name": "climate-api",
+  "version": "1.0.0",
+  "description": "prueba vuejs nodejs",
+  "author": "Juan GALEAS",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "latest",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "compression": "^1.7.4",
+    "core-js": "^2.6.10",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "moment-timezone": "^0.5.28",
+    "nuxt": "latest",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.0"
+  }
+}

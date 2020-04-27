@@ -167,7 +167,7 @@
               :color="selectedEvent.color"
               dark
             >
-
+                <div v-html="selectedEvent.img"></div>
               <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
               <v-spacer></v-spacer>
 
@@ -175,10 +175,10 @@
             <v-card-text>
 
               <div>Temperatura Min</div>
-              <v-col class="display-3" cols="5"v-html="selectedEvent.temperaturalow">
+              <v-col class="display-3" cols="5" v-html="selectedEvent.temperaturalow">
               </v-col>&deg;F
               <div>Temperatura Max</div>
-              <v-col class="display-3" cols="5"v-html="selectedEvent.temperaturamax">
+              <v-col class="display-3" cols="5" v-html="selectedEvent.temperaturamax">
               </v-col>&deg;F
             </v-card-text>
             <v-card-actions>
@@ -371,6 +371,7 @@
             start: this.formatDate(element.time, currently.timezone),
             temperaturalow: element.temperatureLow.toFixed(),
             temperaturamax: element.temperatureMax.toFixed(),
+            img:  `<img width="40" height="20" src="https://darksky.net/images/weather-icons/${element.icon}.png"></img> `,
             color: 'indigo'
 
           })
