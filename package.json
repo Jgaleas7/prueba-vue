@@ -17,7 +17,7 @@
     "core-js": "^2.6.10",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
-    "moment-timezone": "^0.5.28",
+    "moment-timezone": "^0.5.35",
     "nuxt": "latest",
     "superagent": "^5.2.2"
   },
